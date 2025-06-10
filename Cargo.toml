@@ -5,3 +5,16 @@ edition = "2024"
 
 [dependencies]
 egor = "0.2.0"
+dioxus-devtools = { version = "0.7.0-alpha.1" }
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
